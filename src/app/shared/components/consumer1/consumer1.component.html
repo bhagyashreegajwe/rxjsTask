@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+        <p class="alert alert-info" *ngIf="userName;else noUser">
+            Hello my name is {{userName}}
+        </p>
+        <ng-template #noUser>
+            <p class="alert alert-warning">
+                No User to display
+            </p>
+        </ng-template>
+    </div>
+</div>
